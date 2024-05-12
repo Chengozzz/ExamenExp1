@@ -21,6 +21,11 @@
                         {{ __('Añadir Tareas') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('tareas/create')" :active="request()->routeIs('tareas/create')">
+                        {{ __(' Tareas Pendiendtes') }}
+                    </x-nav-link>
+                    
             </div>
 
             <!-- Settings Dropdown -->
