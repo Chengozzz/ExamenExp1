@@ -32,24 +32,9 @@ class TareasController extends Controller
      */
     public function store(StoretareasRequest $request)
     {
-        //
+        //Usar store para rellenar (toamr ejemplo de sigeco)
     }
-    public function save(Request $request)
-    {   
-        $validation = $request->validate([
-            'title' => 'required',
-            'category' => 'required',
-            'price' => 'required',
-        ]);
-        $data = Product::create($validation);
-        if ($data) {
-            session()->flash('success', 'Product Add Succesfully');
-            return redirect(route('admin/products'));
-        } else{
-            session()->flash('error', 'Some problem occure');
-            return redirect(route('admin.products/create'));
-        }
-    }
+
     /**
      * Display the specified resource.
      */

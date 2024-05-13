@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
-
+//anadir la relacion para que tenga el id de la tarea
 class ProfileController extends Controller
 {
     /**

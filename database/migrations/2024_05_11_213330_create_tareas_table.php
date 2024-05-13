@@ -13,13 +13,14 @@ return new class extends Migration
     {
         Schema::create('tareas', function (Blueprint $table) {
             $table->id();
+            
             $table->unsignedBigInteger('user_id');
             $table->string('titulo');
             $table->text('descripcion')->nullable();
             $table->date('fecha_entrega');
             $table->boolean('completado')->default(false);
             $table->string('categoria')->nullable();
-            $table->sofDeletes();
+            $table->softDeletes();
            
             $table->timestamps();
     

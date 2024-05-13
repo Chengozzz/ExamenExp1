@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+//No olvidar este request para guardar
 
 class StoretareasRequest extends FormRequest
 {

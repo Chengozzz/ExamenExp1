@@ -19,7 +19,7 @@ Route::middleware('auth')->group(function () {
 });
 Route::middleware(['auth'])->group(function () {
     
-    
+    //Tomar de ejemplo el sigeco para establecer que metodos permitira las tareas 
     Route::get('/tareas', [TareasController::class, 'index'])->name('tareas/index');
     Route::get('/tareas/create', [TareasController::class, 'create'])->name('tareas/create');
     Route::post('/tareas/save', [TareasController::class, 'save'])->name('tareas/save');
